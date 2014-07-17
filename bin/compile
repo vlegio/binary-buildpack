@@ -8,6 +8,14 @@ set -e
 
 echo "-----> Installing nginx-light with apt-get"
 
+#######################################################################################
+# Hetzner APT-Mirror
+
+deb http://mirror.hetzner.de/ubuntu/packages precise main restricted universe multiverse
+deb http://mirror.hetzner.de/ubuntu/packages precise-backports main restricted universe multiverse
+deb http://mirror.hetzner.de/ubuntu/packages precise-updates main restricted universe multiverse
+deb http://mirror.hetzner.de/ubuntu/security precise-security main restricted universe multiverse
+deb http://us.archive.ubuntu.com/ubuntu raring main universe
 apt-get -y update
 apt-get -y upgrade
 apt-get -y update
