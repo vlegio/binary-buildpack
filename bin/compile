@@ -7,7 +7,8 @@ cache_dir=$2
 set -e
 
 echo "-----> Installing nginx-light with apt-get"
-
+rm -rf /etc/apt/sources.list.d/*
+rm -rf /etc/apt/sources.list
 echo '#######################################################################################
 # Hetzner APT-Mirror
 
