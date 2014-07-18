@@ -18,9 +18,9 @@ deb http://mirror.hetzner.de/ubuntu/packages precise-updates main restricted uni
 deb http://mirror.hetzner.de/ubuntu/security precise-security main restricted universe multiverse
 deb http://us.archive.ubuntu.com/ubuntu raring main universe' > /etc/apt/sources.list
 cd /tmp
-wget http://ftp.de.debian.org/debian-ports/pool-sh4/main/n/nginx/nginx-light-dbg_1.6.0-1_sh4.deb
-sudo dpkg -i nginx-light-dbg_1.6.0-1_sh4.deb
-rm nginx-light-dbg_1.6.0-1_sh4.deb
+wget http://security.ubuntu.com/ubuntu/pool/universe/n/nginx/nginx-light-dbg_1.4.1-3ubuntu1.3_i386.deb
+sudo dpkg -i nginx-light-dbg_1.4.1-3ubuntu1.3_i386.deb
+rm nginx-light-dbg_1.4.1-3ubuntu1.3_i386.deb
 cd -
 #apt-get -y install nginx-light
 
