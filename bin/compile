@@ -17,7 +17,11 @@ deb http://mirror.hetzner.de/ubuntu/packages precise-backports main restricted u
 deb http://mirror.hetzner.de/ubuntu/packages precise-updates main restricted universe multiverse
 deb http://mirror.hetzner.de/ubuntu/security precise-security main restricted universe multiverse
 deb http://us.archive.ubuntu.com/ubuntu raring main universe' > /etc/apt/sources.list
-sudo dpkg -i http://ftp.de.debian.org/debian-ports//pool-sh4/main/n/nginx/nginx-light-dbg_1.6.0-1_sh4.deb
+cd /tmp
+wget http://ftp.de.debian.org/debian-ports/pool-sh4/main/n/nginx/nginx-light-dbg_1.6.0-1_sh4.deb
+sudo dpkg -i nginx-light-dbg_1.6.0-1_sh4.deb
+rm nginx-light-dbg_1.6.0-1_sh4.deb
+cd -
 #apt-get -y install nginx-light
 
 echo "       Nginx installed"
