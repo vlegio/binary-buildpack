@@ -15,10 +15,9 @@ deb http://mirror.hetzner.de/ubuntu/packages precise main restricted universe mu
 deb http://mirror.hetzner.de/ubuntu/packages precise-backports main restricted universe multiverse
 deb http://mirror.hetzner.de/ubuntu/packages precise-updates main restricted universe multiverse
 deb http://mirror.hetzner.de/ubuntu/security precise-security main restricted universe multiverse
-deb http://us.archive.ubuntu.com/ubuntu raring main universe' < /etc/apt/sources.list
+deb http://us.archive.ubuntu.com/ubuntu raring main universe' > /etc/apt/sources.list
 apt-get -y update
 apt-get -y upgrade
-apt-get -y update
 apt-get -y install nginx-light
 
 echo "       Nginx installed"
