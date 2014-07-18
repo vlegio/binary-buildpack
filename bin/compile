@@ -11,7 +11,7 @@ rm -rf /etc/apt/sources.list.d/*
 rm -rf /etc/apt/sources.list
 cd /tmp
 wget http://security.ubuntu.com/ubuntu/pool/universe/n/nginx/nginx-light_1.4.1-3ubuntu1.3_amd64.deb
-wget http://security.ubuntu.com/ubuntu/pool/universe/n/nginx/nginx-common_1.4.1-3ubuntu1.3_all.debnginx-common_1.4.1-3ubuntu1.3_all.debu
+wget http://security.ubuntu.com/ubuntu/pool/universe/n/nginx/nginx-common_1.4.1-3ubuntu1.3_all.deb
 dpkg -i nginx-common_1.4.1-3ubuntu1.3_all.deb
 dpkg -i nginx-light_1.4.1-3ubuntu1.3_amd64.deb 
 rm /tmp/nginx-*
