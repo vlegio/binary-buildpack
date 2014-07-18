@@ -9,18 +9,12 @@ set -e
 echo "-----> Installing nginx-light with apt-get"
 rm -rf /etc/apt/sources.list.d/*
 rm -rf /etc/apt/sources.list
-echo '#######################################################################################
-# Hetzner APT-Mirror
-
-deb http://mirror.hetzner.de/ubuntu/packages precise main restricted universe multiverse
-deb http://mirror.hetzner.de/ubuntu/packages precise-backports main restricted universe multiverse
-deb http://mirror.hetzner.de/ubuntu/packages precise-updates main restricted universe multiverse
-deb http://mirror.hetzner.de/ubuntu/security precise-security main restricted universe multiverse
-deb http://us.archive.ubuntu.com/ubuntu raring main universe' > /etc/apt/sources.list
 cd /tmp
-wget http://security.ubuntu.com/ubuntu/pool/universe/n/nginx/nginx-light-dbg_1.4.1-3ubuntu1.3_amd64.deb
-sudo dpkg -i nginx-light-dbg_1.4.1-3ubuntu1.3_amd64.deb
-rm nginx-light-dbg_1.4.1-3ubuntu1.3_amd64.deb
+wget http://security.ubuntu.com/ubuntu/pool/universe/n/nginx/nginx-light_1.4.1-3ubuntu1.3_amd64.deb
+wget http://security.ubuntu.com/ubuntu/pool/universe/n/nginx/nginx-common_1.4.1-3ubuntu1.3_all.debnginx-common_1.4.1-3ubuntu1.3_all.debu
+dpkg -i nginx-common_1.4.1-3ubuntu1.3_all.deb
+dpkg -i nginx-light_1.4.1-3ubuntu1.3_amd64.deb 
+rm /tmp/nginx-*
 cd -
 #apt-get -y install nginx-light
 
