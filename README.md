@@ -8,3 +8,6 @@ Two things to make this work:
 ```
 BUILDPACK_URL="https://github.com/t0pep0/binary-buildpack.git"
 ```
+
+NB:
+  Binary application must listen 0.0.0.0:5000
