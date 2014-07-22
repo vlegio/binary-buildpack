@@ -6,5 +6,8 @@ Two things to make this work:
 2. Create an `.env` file in your project containing this:
 
 ```
-BUILDPACK_URL="https://github.com/ruudud/static-buildpack.git"
+BUILDPACK_URL="https://github.com/t0pep0/static-buildpack.git"
 ```
+
+FIXES:
+ DROP apt-get command, add  download packets from http://security.ubuntu.com
